@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Tài Xỉu Động (Full Tính Năng)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tài Xỉu (Sic Bo)</h1>
+        <h1 style="color: red">Tài khoản: Nhan Xuân Tuấn vua cờ bạc </h1>
+
+        <p class="player-balance">Số dư: <span id="playerBalance">5,000,000</span> VNĐ</p> 
+
+        <div class="game-status">
+        Thời gian đặt cược: <span id="countdownDisplay">30</span> giây
+        </div>
+
+        <div class="dice-area">
+            <div class="dice-display" id="diceDisplay">
+                <div class="dice" data-dice-index="0">?</div>
+                <div class="dice" data-dice-index="1">?</div>
+                <div class="dice" data-dice-index="2">?</div>
+            </div>
+            <div class="result-box">
+                <p>Tổng điểm:</p>
+                <span class="total-score" id="totalScore">0</span>
+                <p>Kết quả:</p>
+                <span class="outcome" id="outcome">Chờ lượt chơi...</span>
+            </div>
+        </div>
+        
+        <div class="history-area">
+            <h3>Lịch Sử Cầu (10 Lượt Gần Nhất)</h3>
+            <div class="history-display" id="historyDisplay">
+                </div>
+        </div>
+        
+        <div class="betting-area">
+         
+            
+            <div class="betting-grid">
+                <div class="bet-option tai">
+                    <span>TÀI (11-17)</span>
+                    <input type="number" class="bet-input" data-bet-type="TÀI" placeholder="Nhập tiền cược (TÀI)">
+                    <button class="place-bet-button">Đặt Cược</button>
+                </div>
+
+                <div class="bet-option xiu">
+                    <span>XỈU (4-10)</span>
+                    <input type="number" class="bet-input" data-bet-type="XỈU" placeholder="Nhập tiền cược (XỈU)">
+                    <button class="place-bet-button">Đặt Cược</button>
+                </div>
+            </div>
+            
+            <p class="current-bet">Số tiền cược hiện tại: 0 VNĐ. Đặt cược mới!</p>
+            
+            <button class="roll-button" id="rollButton">Tung Xúc Xắc</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
